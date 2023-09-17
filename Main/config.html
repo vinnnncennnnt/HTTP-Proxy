@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Proxy Setting</h1>
+
+    <form action="/proxySetting" method="get" id="proxySettinForm">
+        <label for="host">Host:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="host" name="host"><br><br>
+        <label for="port">Port:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="port" name="port"><br><br>
+        <label for="buffSize">Buffer size:&nbsp</label>
+        <input type="text" id="buffSize" name="buffSize"><br><br>
+        <button type="submit" form="proxySettinForm" value="Submit">Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+    <h1>Forbiden Hosts</h1>
+
+    <form action="/forbiddenHosts" method="get" id="forbiddenHostsForm">
+        <label for="host">Host:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="host" name="host"><br><br>
+        <input type="checkbox" id="deleteHost" name="deleteHost" value="deleteFromHost">
+        <label for="deleteHost"> Delete from list</label><br>
+
+        <br>
+        <button type="submit" form="forbiddenHostsForm" value="add">submit</button>
+
+    </form>
+
+
+    <h1>Forbiden Extensions</h1>
+
+    <form action="/forbiddenExtensions" method="get" id="forbiddenExtensionsForm">
+        <label for="Extension">Extension:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="Extension" name="Extension"><br><br>
+        <input type="checkbox" id="deleteExtension" name="deleteExtension" value="deleteFromHost">
+        <label for="deleteExtension"> Delete from list</label><br>
+
+        <br>
+        <button type="submit" form="forbiddenExtensionsForm" value="add">submit</button>
+
+    </form>
+
+
+    <h1>Redirect Hosts</h1>
+
+    <form action="/redirectHosts" method="get" id="redirectHostsForm">
+        <label for="host">Host:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="host" name="host"><br><br>
+        <label for="redirectTo">Change to:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="redirectTo" name="redirectTo"><br><br>
+        <input type="checkbox" id="deleteHost" name="deleteHost" value="deleteFromHost">
+        <label for="deleteHost"> Delete from list</label><br><br>
+        <button type="submit" form="redirectHostsForm" value="Submit">Submit</button>
+
+    </form>
+
+    <h1>Change words in HTML</h1>
+
+    <form action="/changeWord" method="get" id="changeWordForm">
+        <label for="word">Word:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="word" name="word"><br><br>
+        <label for="changeTo">Change to:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+        <input type="text" id="changeTo" name="changeTo"><br><br>
+        <input type="checkbox" id="deleteHost" name="deleteHost" value="deleteFromHost">
+        <label for="deleteHost"> Delete from list</label><br><br>
+        <button type="submit" form="changeWordForm" value="Submit">Submit</button>
+
+    </form>
+</body>
+</html>

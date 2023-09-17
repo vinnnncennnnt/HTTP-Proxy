@@ -1,0 +1,25 @@
+{
+    "parameters": {
+        "port": 4567,
+        "host": "localhost",
+        "bufferSize": 2048
+    },
+    "forbiddenHosts": [
+        "facebook.com"
+    ],
+    "changeWords": [
+        {
+            "word": "libpfb.so",
+            "changeTo": "bananas"
+        }
+    ],
+    "redirectHosts": [
+        {
+            "host": "google.com",
+            "changeTo": "p-fb.net"
+        }
+    ],
+    "deletedExtension": [
+        ".ppm"
+    ]
+}
